@@ -1,4 +1,4 @@
-package queue;
+package minqueue;
 
 import java.io.*;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package sort;
+package antiquicksort;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

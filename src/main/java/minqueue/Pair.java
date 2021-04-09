@@ -1,4 +1,4 @@
-package queue;
+package minqueue;
 
 public class Pair {
     private final int value;

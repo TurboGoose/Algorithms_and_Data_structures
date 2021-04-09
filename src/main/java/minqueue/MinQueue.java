@@ -1,4 +1,4 @@
-package queue;
+package minqueue;
 
 public class MinQueue {
     private final MinStack stack1 = new MinStack();

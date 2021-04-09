@@ -1,4 +1,4 @@
-package sort;
+package antiquicksort;
 
 import org.junit.jupiter.api.Test;
 
