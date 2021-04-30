@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -27,7 +26,7 @@ public class Main {
                 }
             }
         }
-        int[] result = LsdSort(data, K);
+        int[] result = lsdSort(data, K);
         try (PrintWriter out = new PrintWriter(OUTPUT_FILE)) {
             for (int i : result) {
                 out.print(i + " ");
@@ -35,7 +34,7 @@ public class Main {
         }
     }
 
-    public static int[] LsdSort(char[][] data, int stages) {
+    static int[] lsdSort(char[][] data, int stages) {
         final int rows = data.length;
         final int iterations = Math.min(rows, stages);
         int[] permutation = new int[rows];
@@ -54,7 +53,6 @@ public class Main {
                 count[i] = count[i - 1];
             }
             count[0] = 0;
-
             int[] newPerm = new int[rows];
             char[][] newData = new char[rows][];
             for (int i = 0; i < rows; i++) {
